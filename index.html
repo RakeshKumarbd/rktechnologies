@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RKTechnologies — Mobile App Development, Jodhpur</title>
+<meta name="description" content="RKTechnologies builds simple, reliable mobile apps for Android and iOS. Based in Jodhpur, Rajasthan, India.">
+<style>
+  :root{
+    --ink:#0f1b2d; --muted:#5b6778; --line:#e4e8ee; --bg:#ffffff; --soft:#f5f7fa;
+    --brand:#0b8a6b; --brand-dark:#076b53;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--brand-dark)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+  .mark{width:32px;height:32px;border-radius:8px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:800;letter-spacing:.5px}
+  nav ul{display:flex;gap:28px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:96px 0 80px}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;max-width:720px;letter-spacing:-.02em}
+  .hero p{color:var(--muted);font-size:1.15rem;max-width:600px;margin-top:20px}
+  .btn{display:inline-block;margin-top:32px;background:var(--brand);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:600}
+  .btn:hover{background:var(--brand-dark)}
+  section{padding:72px 0;border-top:1px solid var(--line)}
+  section.alt{background:var(--soft)}
+  h2{font-size:1.8rem;letter-spacing:-.01em;margin-bottom:12px}
+  .lead{color:var(--muted);max-width:640px;margin-bottom:40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}
+  .card h3{font-size:1.1rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .app{display:flex;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;max-width:720px}
+  .app-icon{flex:none;width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,#12b38b,#0b8a6b);display:grid;place-items:center}
+  .apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:20px}
+  .apps + h3.group{margin-top:48px}
+  h3.group{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:16px}
+  .app-icon{color:#fff;font-weight:800;font-size:1.3rem}
+  .app-icon.nova{background:linear-gradient(135deg,#5b2be0,#e0399a)}
+  .app-icon.gold{background:linear-gradient(135deg,#2b2f36,#111318);color:#e8c766;font-family:Georgia,serif}
+  .app-icon.cinema{background:#0b0b0d}
+  .app-icon.urban{background:linear-gradient(135deg,#3aa0f0,#1c5fb8)}
+  .app-icon.gajanand{background:linear-gradient(135deg,#e8a64a,#c06b1e)}
+  .app-icon.rail{background:linear-gradient(160deg,#1c2a4a,#0c1424)}
+  .tag.soon{background:#fff3e0;color:#a35a00}
+  .store{display:block;margin-top:12px;font-size:.9rem;font-weight:600;text-decoration:none}
+  .store:hover{text-decoration:underline}
+  @media (max-width:520px){.apps{grid-template-columns:1fr}}
+  .app h3{font-size:1.2rem}
+  .app p{color:var(--muted);font-size:.95rem;margin-top:4px}
+  .tag{display:inline-block;font-size:.75rem;background:#e6f5f0;color:var(--brand-dark);padding:2px 10px;border-radius:999px;margin-top:10px;font-weight:600}
+  .contact dl{display:grid;grid-template-columns:140px 1fr;gap:12px 24px;max-width:640px}
+  .contact dt{color:var(--muted)}
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.9rem}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media (max-width:640px){nav ul{gap:16px}.app{flex-direction:column;align-items:flex-start}.contact dl{grid-template-columns:1fr;gap:4px}.contact dd{margin-bottom:12px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="mark">RK</span>RKTechnologies</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Simple, reliable mobile apps for everyday life.</h1>
+    <p>RKTechnologies is an independent app studio in Jodhpur, Rajasthan. We design and build Android and iOS apps with a focus on privacy, speed and clean design.</p>
+    <a href="#apps" class="btn">See our apps</a>
+  </div>
+
+  <section id="about" class="alt">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="lead">We take an app from idea to the Play Store and App Store, and we keep it maintained after launch.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Mobile app development</h3>
+          <p>Cross-platform apps built with Flutter for Android and iOS from a single codebase.</p>
+        </div>
+        <div class="card">
+          <h3>Backend &amp; APIs</h3>
+          <p>Secure backends and APIs that keep your app's data fast and in sync.</p>
+        </div>
+        <div class="card">
+          <h3>Publishing &amp; support</h3>
+          <p>Store listings, releases, updates and long-term maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <div class="wrap">
+      <h2>Our apps</h2>
+      <p class="lead">Apps built by RKTechnologies for Android and iOS.</p>
+      <h3 class="group">Available now</h3>
+      <div class="apps">
+        <div class="app">
+          <div class="app-icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h5a4 4 0 0 0 0-8h-2a4 4 0 0 1 0-8h5"/></svg>
+          </div>
+          <div>
+            <h3>My Journey: Route &amp; Chat</h3>
+            <p>Record every route with one tap, see your week at a glance with distance, time and speed, explore journeys on street or satellite maps, and chat one-to-one or in groups of up to 100.</p>
+            <span class="tag">Travel · iOS</span> <span class="tag soon">Android coming soon</span>
+            <a class="store" href="https://apps.apple.com/us/app/my-journey-route-chat/id6825601435" target="_blank" rel="noopener">View on the App Store →</a>
+          </div>
+        </div>
+        <div class="app">
+          <div class="app-icon nova" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20V4h6a4 4 0 0 1 0 8H7"/><path d="M12 12l5 8"/></svg>
+          </div>
+          <div>
+            <h3>Nova R Play</h3>
+            <p>Courses, notes and streaks. Learn programming, maths, science and English from curated video courses, take timestamped notes, and keep your learning streak going.</p>
+            <span class="tag">Education · iOS</span>
+            <a class="store" href="https://apps.apple.com/us/app/nova-r-play/id6829406362" target="_blank" rel="noopener">View on the App Store →</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="group">Coming soon</h3>
+      <div class="apps">
+        <div class="app">
+          <div class="app-icon gold" aria-hidden="true">RK</div>
+          <div>
+            <h3>Gold Silver Rate</h3>
+            <p>Check today's gold and silver prices at a glance and follow how rates change over time.</p>
+            <span class="tag soon">Coming soon</span>
+          </div>
+        </div>
+        <div class="app">
+          <div class="app-icon cinema" aria-hidden="true">H</div>
+          <div>
+            <h3>Home Cinema</h3>
+            <p>Browse and enjoy movies and shows in one simple, cinema-style app at home.</p>
+            <span class="tag soon">Coming soon</span>
+          </div>
+        </div>
+        <div class="app">
+          <div class="app-icon urban" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <div>
+            <h3>UrbanCapture</h3>
+            <p>Capture, organize and share photos of the places around you.</p>
+            <span class="tag soon">Coming soon</span>
+          </div>
+        </div>
+        <div class="app">
+          <div class="app-icon gajanand" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          </div>
+          <div>
+            <h3>Gajanand Mobile</h3>
+            <p>Book mobile phone repairs and services, track your repair status, and contact the shop.</p>
+            <span class="tag soon">Coming soon</span>
+          </div>
+        </div>
+        <div class="app">
+          <div class="app-icon rail" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#f2c14e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M8 22l3-10M16 22l-3-10M7 18h10M8.5 15h7"/></svg>
+          </div>
+          <div>
+            <h3>Rail Rush</h3>
+            <p>A fast-paced endless runner — race along the rails, dodge obstacles and beat your high score.</p>
+            <span class="tag soon">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="lead">Questions about our apps or a project? Get in touch.</p>
+      <dl>
+        <dt>Business</dt><dd>RKTechnologies</dd>
+        <dt>Owner</dt><dd>Rakesh Prajapat</dd>
+        <dt>Email</dt><dd><a href="mailto:rk7976918373@gmail.com">rk7976918373@gmail.com</a></dd>
+        <dt>Address</dt><dd>Plot 1, Residence, Chhutra Nagar<br>Jalamand, Luni, Jodhpur<br>Rajasthan 342005, India</dd>
+        <dt>Udyam No.</dt><dd>UDYAM-RJ-22-0229308</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 RKTechnologies. All rights reserved.</span>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
